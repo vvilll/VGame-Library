@@ -1,0 +1,167 @@
+* {
+    font-family: "Press Start 2P", system-ui;
+    color: rgb(247, 233, 70);
+    margin: 0;
+}
+
+body {
+    background-color: rgb(52, 58, 137);
+}
+
+.header {
+    display: flex;
+    background-color: rgb(56, 62, 147);
+    margin-bottom: 1%;
+}
+.headerNav {
+    display: flex;
+    width: 70%;
+    align-items: center;
+}
+.headerLogo {
+    margin-left: .5%;
+    margin-right: .5%;
+}
+
+.navBar {
+    width: 100%;
+}
+.navBar ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+.navBar li {
+    float: left;
+    margin-right: 5%;
+}
+.navBar a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+.navBar a:hover {
+    color: rgb(0, 0, 0);
+}
+.usrIcon {
+    display: flex;
+    align-items: center;
+}
+
+.bodyTitle {
+    font-family: "Bitcount Prop Double", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0, "CRSV" 0.5, "ELSH" 0, "ELXP" 0;
+    font-size: 70px;
+    background: linear-gradient(180deg, #FFF680 0%, #FFA500 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    justify-self: center;
+}
+.homePage {
+    display: flex;
+    margin: 10px;
+}
+.popularTitles {
+    width: 55%;
+    margin: 10px;
+}
+.featuredGame {
+    width: 45%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titleList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.title {
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 20px;
+    height: auto;
+    font-size: small;
+    margin: 1%;
+    background-color: rgb(56, 62, 147);
+}
+.titleImg {
+    margin-bottom: 5px;
+    width: 250px;
+    height: 200px;
+}
+.title p {
+    text-align: left;
+    padding: 0;
+}
+.title a {
+    color: white;
+}
+.titleOfWeek {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: rgb(56, 62, 147);
+}
+.titleOfWeek a {
+    color: white;
+}
+
+.aboutDes {
+    padding: 1%;
+    margin: 1%;
+}
+
+.libList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.libTitle {
+    margin: 10px;
+    padding: 5px;
+    width: 20%;
+    height: auto;
+}
+.libTitle img {
+    width: 200px;
+    height: 150px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.libTitle button {
+    background-color: black;
+}
+.traversal {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    margin: 20px;
+}
+.pageBtn {
+    background-color: black;
+    padding: 5px;
+    margin: 5px;
+}
+
+.accountBody {
+    padding: 20px;
+}
+.uName p {
+    margin-bottom: 10px;
+}
+.uName button {
+    margin-bottom: 10px;
+    background-color: black;
+}
