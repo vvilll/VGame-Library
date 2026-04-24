@@ -1,0 +1,307 @@
+/* ---------------------------------------------------
+   GLOBAL RESET + TYPOGRAPHY
+--------------------------------------------------- */
+* {
+    font-family: "Audiowide", sans-serif;
+    color: #C0C0C0; /* Chrome Silver */
+    margin: 0;
+}
+
+body {
+    background-color: #0A0A0F;
+}
+
+/* ---------------------------------------------------
+   BUTTONS — Primary Neon (Electric Purple)
+--------------------------------------------------- */
+.btn {
+    background-color: #A020F0;
+    padding: 5px 10px;
+    border: 1px solid #00CFFF;
+    color: #FFFFFF;
+    box-shadow: 0 0 12px #B026FF;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #B026FF;
+    box-shadow: 0 0 18px #B026FF;
+}
+
+/* ---------------------------------------------------
+   NAV BAR — Midnight Indigo + Vapor Mist Logo
+--------------------------------------------------- */
+nav {
+    background-color: #131629; 
+    padding: 1% 5%;
+    margin-bottom: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: x-large;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #E3E8FF;
+}
+
+.navPages {
+    list-style: none;
+    display: flex;
+    gap: 50%;
+}
+
+.navPages li a {
+    position: relative;
+    text-decoration: none;
+    color: #C0C0C0; 
+}
+
+.navPages li a:hover {
+    text-shadow: 0 0 10px #00F6FF;
+}
+
+/* ---------------------------------------------------
+   LOGIN FORM — Gunmetal Panels + Cyan Focus
+--------------------------------------------------- */
+.frmBox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    padding: 2rem;
+    background: #1A1F2B;
+    border-radius: 16px;
+    box-shadow: 0 0 25px #00CFFF55; 
+    color: #C0C0C0;
+}
+
+.frm {
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+}
+
+.frmInput input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    background: #131629; 
+    border: 1px solid #333;
+    border-radius: 10px;
+    color: #E3E8FF;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.frmInput input:focus {
+    border-color: #00F6FF;
+    box-shadow: 0 0 8px #00F6FF;
+}
+
+.frmBtn {
+    display: flex;
+    flex-direction: row;
+}
+
+.frmBtn input {
+    width: 50%;
+    padding: 14px;
+    margin: 1rem;
+    background: #00CFFF;
+    border: none;
+    border-radius: 10px;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.frmBtn input:hover {
+    box-shadow: 0 0 12px #00F6FF;
+}
+
+.frmBox a {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #00F6FF;
+    text-decoration: none;
+}
+
+.frmBox a:hover {
+    text-shadow: 0 0 10px #00F6FF;
+}
+
+/* ---------------------------------------------------
+   INDEX PAGE
+--------------------------------------------------- */
+.homePage {
+    margin: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.topSet, .botSet {
+    display: flex;
+    margin: 10px;
+}
+
+/* ---------------------------------------------------
+   GAME CARDS — Gunmetal + Cyan Hover
+--------------------------------------------------- */
+.gameCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #1A1F2B;
+    border: 2px solid transparent;
+    padding: 30px 40px;
+    border-radius: 10px;
+    transition: 0.2s ease;
+}
+
+.gameCard:hover {
+    border: 2px solid #00CFFF;
+    box-shadow: 0 0 15px #00F6FF;
+}
+
+.gameCard img {
+    width: 10vw;
+    height: 19vh;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 10px;
+}
+
+/* ---------------------------------------------------
+   INFO TAGS — Neon Pink Accents
+--------------------------------------------------- */
+.infoBoxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.infoBoxes p {
+    border: 1px solid #FF2EC4;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    color: #FF2EC4;
+}
+
+/* ---------------------------------------------------
+   ABOUT PAGE
+--------------------------------------------------- */
+.aboutDes {
+    padding: 1%;
+    margin: 1%;
+    color: #C0C0C0;
+}
+
+/* ---------------------------------------------------
+   CONTENT PAGE — Gunmetal Panels + Hologram Gray Borders
+--------------------------------------------------- */
+.contentPg {
+    display: flex;
+}
+
+.libList {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    width: 70%;
+}
+
+.libTitle {
+    border: 2px solid #6A7C99;
+    margin: 10px;
+    width: 80%;
+    background-color: #1A1F2B;
+    display: flex;
+    align-items: center;
+}
+
+.libTitle img {
+    width: 200px;
+    height: 150px;
+}
+
+.libDesc {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0 5% 5%;
+    color: #C0C0C0;
+}
+
+.frmBoxSearch {
+    width: 30%;
+    padding-right: 2rem;
+    margin: 1%;
+    background: #1A1F2B;
+    border-radius: 16px;
+    box-shadow: 0 0 25px #00CFFF55; 
+    color: #C0C0C0;
+}
+
+/* ---------------------------------------------------
+   Review Page
+--------------------------------------------------- */
+.frmBoxReview {
+    display: flex;
+    width: 50%;
+    height: 50%;
+    padding: 1rem;
+    margin: 1%;
+    background: #1A1F2B;
+    border-radius: 16px;
+    box-shadow: 0 0 25px #00CFFF55; 
+    color: #C0C0C0;
+}
+
+.frmReview {
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+    height: 80%;
+}
+
+.frmInputTxtArea {
+    width: 100%;
+    height: 60%;
+}
+
+.frmInputTxtArea textarea {
+    width: 100%;
+    height: 90%;
+}
+
+.reviewList {
+    margin: 1rem;
+}
+
+.usrReview {
+    background: #222836;
+    border-left: 2px solid #00CFFF55;
+    padding: 1rem 1.2rem;
+    margin-bottom: 1rem;
+    color: #E0E0E0;
+    box-shadow: 0 0 12px #00CFFF22;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* ---------------------------------------------------
+   Account Page
+--------------------------------------------------- */
+.accountBody {
+    width: 50%;
+}
