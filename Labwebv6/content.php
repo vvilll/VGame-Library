@@ -1,0 +1,70 @@
+<?php
+//include auth_session.php file on all user panel pages
+include("auth_session.php");
+include 'dbconnect.php';
+$email = $_SESSION['email'];
+$nodeID = $_SESSION['userID'];
+$keyword = $_GET['keyword'] ?? '';
+
+$sql = "SELECT * FROM games 
+        WHERE GameName LIKE '%$keyword%' 
+        OR Genre LIKE '%$keyword%'";
+$result = mysqli_query($conn, $sql);
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Archive</div>
+        <ul class="navPages">
+            <li><a href="loghome.php">Home</a></li>
+            <li><a href="logabout.php">About</a></li>
+            <li><a href="content.php">Search</a></li>
+            <li><a href="logout.php">Logout</a></li>
+        </ul>
+        <div><a class="btn" href="account.php">Account</a></div>
+    </nav>
+    <div class="contentPg">
+        <div class="libList">
+            <!-- for each display game from results -->
+             <?php while($row = mysqli_fetch_assoc($result)) { ?>
+            <div class="libTitle">
+                <img src="<?php echo $row['imgLink']; ?>" alt="dev">
+                <div class="libDesc">
+                    <p class="titleDesc"><?php echo $row['GameName']; ?><br><?php echo $row['Genre']; ?></p><br>
+                    <a href="<?php echo $row['Link']; ?>"target="_blank">Steam</a><br>
+                    <a class="btn" href="review.php?id=<?php echo $row['GameID']; ?>">Review</a>
+                </div>
+            </div>
+            <?php } ?>
+            <!-- end of for each -->
+        </div>
+        <div class="frmBoxSearch">
+            <form class="frm" method="GET" action="content.php">
+                <div class="frmTitle">
+                    <h3 class="text-danger">Search</h3>
+                </div>
+
+                <div class="frmInput">
+                    <label for="email">Title / genre</label><br>
+                    <input id="txtBox" type="search" id="game" name="keyword"/>
+                </div>
+
+                <div class="frmBtn">
+                    <input type="reset" id="reset" value="Reset">
+                    <input type="submit" id="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
